@@ -141,6 +141,7 @@ fieldset{
 /*MAIN*/
 main{
     width:100%;
+    overflow-x:auto;
 }
 
 table{
@@ -150,6 +151,7 @@ table{
 
 table th, table td{
     padding:1rem;
+    white-space:nowrap;
 }
 
 table td{
@@ -170,4 +172,3 @@ table img{
     margin-right:1rem;
     pointer-events:none;
 }
-
