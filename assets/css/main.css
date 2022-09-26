@@ -1,0 +1,173 @@
+*,html{
+    scroll-behavior: smooth;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --white:#fff;
+    --black:#000;
+    --dark:#17171a;
+    --lite_dark:#323546;
+    --gray:rgba(255,255,255,0.6);
+    --primary:#3861fb;
+    --primary_lite:#3399ff;
+    --maroon:#a63743;
+    --green:#15b679;
+    --default:'Mukta', sans-serif;
+    --title:'Montserrat', sans-serif;
+    --cursive:'Dancing Script', cursive;
+}
+
+/*Default*/
+body{
+    margin:0;
+    overflow-x:hidden;
+    font-family:var(--default);
+    background-color:var(--dark);
+    color:var(--white);
+}
+
+a{
+    text-decoration:none !important;
+    min-width: fit-content;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+
+a, button, i{
+    transition:0.5s;
+}
+
+em{
+    font-style:normal;
+}
+
+figure{
+    padding:0;
+    margin:0;
+}
+
+fieldset{
+    border:0;
+}
+
+.flex{
+    display:flex;
+    align-items:center;
+}
+
+.flex-content{
+    width:100%;
+    position:relative;
+}
+
+.title{
+    font-family:var(--title);
+}
+
+.cursive{
+    font-family:var(--cursive);
+}
+
+.padding_1x{
+    padding:1rem;
+}
+
+.padding_2x{
+    padding:2rem;
+}
+
+.padding_3x{
+    padding:3rem;
+}
+
+.big{
+    font-size:4em;
+}
+
+.medium{
+    font-size:2.5rem;
+}
+
+.small{
+    font-size:1.5em;
+}
+
+.btn1, .btn2{
+    padding:0.5rem 1rem;
+    border-radius:5px;
+    text-align:center;
+    border:0;
+}
+
+.btn1{
+    background-color:var(--primary);
+    color:var(--white);
+}
+
+.btn1:hover{
+    background-color:var(--primary_lite);
+}
+
+@media (max-width:920px){
+    .big{
+        font-size:1.8em;
+    }
+    
+    .medium{
+        font-size:1.4em;
+    }
+    
+    .small{
+        font-size:1.2em;
+    }
+    
+    .flex{
+        flex-wrap:wrap;
+    }
+    
+    .padding_1x, .padding_2x, .padding_3x{
+        padding:1rem;
+    }
+}
+
+
+/*MAIN*/
+main{
+    width:100%;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+table th, table td{
+    padding:1rem;
+}
+
+table td{
+    color:var(--gray);
+}
+
+table th{
+    background-color:var(--lite_dark);
+    text-align:left;
+}
+
+table tr th:nth-child(1), table tr td:nth-child(1){
+    width:8%;
+}
+
+table img{
+    width:25px;
+    margin-right:1rem;
+    pointer-events:none;
+}
+
